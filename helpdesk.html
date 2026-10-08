@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nguyễn Võ Anh Phú">
+    <title>CWA Help Desk Appointment</title>
+
+    <style>
+        body {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="logo.png" alt="Swinburne logo" width="150">
+
+    <h1>CWA Help Desk Appointment</h1>
+
+    <p>
+        The Help Desk is located in ATC620.
+        Open 10:30 to 19:00 Monday to Friday
+    </p>
+
+    <p>Check Blackboard for when CWA tutors will be there.</p>
+
+    <form>
+        <fieldset>
+            <legend>Student details</legend>
+
+            <p>
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="student_id">
+            </p>
+
+            <p>
+                <label for="given-name">Given Name</label>
+                <input type="text" id="given-name" name="given_name"
+                       size="15">
+
+                <label for="family-name">Family Name</label>
+                <input type="text" id="family-name" name="family_name"
+                       size="15">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your unit</legend>
+
+            <p>
+                <label>
+                    <input type="radio" name="unit" value="COS10011">
+                    COS10011
+                </label>
+
+                <label>
+                    <input type="radio" name="unit" value="COS60004">
+                    COS60004
+                </label>
+
+                <label>
+                    <input type="radio" name="unit" value="COS60007">
+                    COS60007
+                </label>
+            </p>
+
+            <p>
+                <label for="tutor">Your Tutor</label>
+                <select id="tutor" name="tutor">
+                    <option value="">Please Select</option>
+                    <option value="tutor1">Tutor 1</option>
+                    <option value="tutor2">Tutor 2</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Issue</legend>
+
+            <p>
+                <label>
+                    HTML <input type="checkbox" name="issue"
+                                value="HTML" checked>
+                </label>
+
+                <label>
+                    CSS <input type="checkbox" name="issue" value="CSS">
+                </label>
+
+                <label>
+                    JavaScript <input type="checkbox" name="issue"
+                                      value="JavaScript">
+                </label>
+
+                <label>
+                    PHP <input type="checkbox" name="issue" value="PHP">
+                </label>
+
+                <label>
+                    MySQL <input type="checkbox" name="issue"
+                                 value="MySQL">
+                </label>
+            </p>
+
+            <p>
+                <label for="description">Description of Issue</label>
+                <br>
+                <textarea id="description" name="description"
+                          rows="6" cols="40"
+                          placeholder="Write description of your problem here..."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Date / Time</legend>
+
+            <label for="date">Date</label>
+            <input type="text" id="date" name="date"
+                   placeholder="dd/mm/yyyy">
+            <br>
+
+            <label for="time">Time</label>
+            <input type="text" id="time" name="time"
+                   placeholder="00:00">
+        </fieldset>
+
+        <button type="submit">Book</button>
+        <button type="reset">Reset form</button>
+    </form>
+</body>
+</html>
